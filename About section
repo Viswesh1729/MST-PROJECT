@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Innovating for Sustainability</title>
+  <style>
+    :root {
+      --primary-color: #00796b;
+      --accent-color: #43a047;
+      --bg-color: #f4fdf6;
+      --card-bg: #ffffff;
+      --text-color: #2e2e2e;
+      --border-color: #cce5dd;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    .header {
+      background-color: var(--primary-color);
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .header h1 {
+      font-size: 2.8em;
+      margin: 0;
+    }
+
+    .header p {
+      font-size: 1.2em;
+      margin-top: 8px;
+    }
+
+    .content {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .appliance {
+      background: var(--card-bg);
+      border-left: 6px solid var(--accent-color);
+      margin-bottom: 25px;
+      padding: 20px 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .appliance:hover {
+      transform: translateY(-5px);
+    }
+
+    .appliance h2 {
+      margin-top: 0;
+      color: var(--primary-color);
+      font-size: 1.8em;
+    }
+
+    .appliance ol {
+      padding-left: 20px;
+    }
+
+    .appliance li {
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.95em;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 2em;
+      }
+
+      .appliance h2 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Innovating for Sustainability</h1>
+    <p>Driving Smart Resource Conservation (Energy & Water) in Home Appliances</p>
+  </header>
+
+  <main class="content">
+    <section class="appliance" id="refrigerators">
+      <h2>🥶 Refrigerators</h2>
+      <p><strong>Problems:</strong></p>
+      <ol>
+        <li><strong>High Energy Consumption</strong> – Older or poorly maintained units consume a lot of electricity.</li>
+        <li><strong>Refrigerant Emissions</strong> – Many still use refrigerants with high Global Warming Potential (GWP).</li>
+        <li><strong>Poor Cooling Efficiency</strong> – Due to frequent door opening, improper thermostat settings, or overload.</li>
+        <li><strong>Compressor Overuse</strong> – Lack of smart control leads to constant cycling and reduced lifespan.</li>
+      </ol>
+      <p><strong>Solutions:</strong></p>
+      <ol>
+        <li><strong>App-Based Alerts & Control</strong> – Remind users to close doors, clean coils, or adjust settings via app.</li>
+        <li><strong>Thermal Insulation Enhancements</strong> – Improve insulation materials to retain coolness longer.</li>
+        <li><strong>Solar-Integrated Power Options</strong> – Run using DC compressors powered by solar panels, ideal for remote or sunny areas.</li>
+      </ol>
+    </section>
+
+    <section class="appliance" id="air-conditioners">
+      <h2>❄️ Air Conditioners</h2>
+      <p><strong>Problems:</strong></p>
+      <ol>
+        <li><strong>Overcooling & Uneven Cooling</strong> – Poor room sensing and lack of zoning waste energy.</li>
+        <li><strong>Dirty Filters and Poor Maintenance</strong> – Reduces efficiency, airflow, and air quality.</li>
+        <li><strong>Not Optimized for Climate Zones</strong> – Same settings used for different environments reduce efficiency.</li>
+      </ol>
+      <p><strong>Solutions:</strong></p>
+      <ol>
+        <li><strong>Auto Cleaning & Maintenance Alerts</strong> – Prevent filter clogging and improve airflow with app-based reminders.</li>
+        <li><strong>Inverter Technology Compressors</strong> – Adjust power consumption based on cooling needs, avoiding full-speed operation.</li>
+        <li><strong>Solar-Powered AC Units</strong> – Reduce grid dependency, especially in high-sun regions.</li>
+        <li><strong>Geofencing & Remote Control</strong> – Turn off or adjust AC based on user location via smartphone app.</li>
+      </ol>
+    </section>
+
+    <section class="appliance" id="washing-machines">
+      <h2>🧺 Washing Machines</h2>
+      <p><strong>Problems:</strong></p>
+      <ol>
+        <li><strong>Excessive Water Usage</strong> – Many models don’t adjust water based on load size.</li>
+        <li><strong>High Energy Consumption</strong> – Especially in hot water cycles or when using inefficient motors.</li>
+        <li><strong>Limited Greywater Reuse</strong> – Water is discarded even when it can be reused for pre-wash or flushing.</li>
+      </ol>
+      <p><strong>Solutions:</strong></p>
+      <ol>
+        <li><strong>Greywater Reuse System</strong> – Store and reuse rinse water for the next pre-wash or toilet flush.</li>
+        <li><strong>Smart Load Sensing</strong> – Use sensors to adjust water and energy usage based on load weight and fabric type.</li>
+        <li><strong>Eco Wash Modes</strong> – Lower temperature, shorter duration, and optimized rinse cycles to save resources.</li>
+      </ol>
+    </section>
+
+    <section class="appliance" id="desert-air-coolers">
+      <h2>🌬️ Desert Air Coolers</h2>
+      <p><strong>Problems:</strong></p>
+      <ol>
+        <li><strong>Excessive Water Usage</strong> – Constant evaporation consumes large amounts of water, especially in arid regions.</li>
+        <li><strong>Inefficient Cooling in Humid Conditions</strong> – They are less effective when humidity levels are high.</li>
+        <li><strong>Manual Operation and Poor Control</strong> – Lack of smart features leads to unnecessary operation and resource wastage.</li>
+      </ol>
+      <p><strong>Solutions:</strong></p>
+      <ol>
+        <li><strong>Water Level Sensors & Auto-Shutoff</strong> – Prevents dry running and alerts users when water is low, conserving resources.</li>
+        <li><strong>Smart Climate-Based Control</strong> – Integrates humidity sensors to adjust fan speed or shut down when cooling is ineffective.</li>
+        <li><strong>Solar-Powered Operation</strong> – Use photovoltaic panels to run the cooler, reducing electricity dependency.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Innovating for Sustainability. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

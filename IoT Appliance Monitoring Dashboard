@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IoT Home Appliance Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4fdf6;
+      padding: 20px;
+      color: #2e2e2e;
+    }
+    h1 {
+      color: #00796b;
+      text-align: center;
+    }
+    .card {
+      background: #ffffff;
+      padding: 20px;
+      margin: 20px auto;
+      border-left: 6px solid #43a047;
+      border-radius: 8px;
+      max-width: 600px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #00796b;
+    }
+    .sensor-data {
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🌿 IoT Appliance Monitoring Dashboard</h1>
+
+  <!-- Refrigerator -->
+  <div class="card" id="fridgeCard">
+    <h3>🥶 Refrigerator Temperature</h3>
+    <p class="sensor-data">Temperature: <span id="fridgeTemp">--</span> °C</p>
+  </div>
+
+  <!-- Washing Machine -->
+  <div class="card" id="washerCard">
+    <h3>🧺 Washing Machine Water Usage</h3>
+    <p class="sensor-data">Water Flow: <span id="waterFlow">--</span> L/min</p>
+  </div>
+
+  <!-- Air Conditioner -->
+  <div class="card" id="acCard">
+    <h3>❄️ Air Conditioner Monitoring</h3>
+    <p class="sensor-data">Room Temp: <span id="acTemp">--</span> °C</p>
+    <p class="sensor-data">Power Usage: <span id="acPower">--</span> kW</p>
+  </div>
+
+  <!-- Desert Air Cooler -->
+  <div class="card" id="coolerCard">
+    <h3>🌬️ Desert Air Cooler Monitoring</h3>
+    <p class="sensor-data">Water Level: <span id="coolerWater">--</span> %</p>
+    <p class="sensor-data">Humidity: <span id="coolerHumidity">--</span> %</p>
+  </div>
+
+  <script>
+    function updateSensors() {
+      // Refrigerator: temp between 2–8°C
+      document.getElementById("fridgeTemp").textContent = (Math.random() * 6 + 2).toFixed(1);
+
+      // Washing Machine: flow between 5–15 L/min
+      document.getElementById("waterFlow").textContent = (Math.random() * 10 + 5).toFixed(1);
+
+      // Air Conditioner: temp 20–28°C, power 0.5–2.5 kW
+      document.getElementById("acTemp").textContent = (Math.random() * 8 + 20).toFixed(1);
+      document.getElementById("acPower").textContent = (Math.random() * 2 + 0.5).toFixed(2);
+
+      // Air Cooler: water level 0–100%, humidity 20–60%
+      document.getElementById("coolerWater").textContent = Math.floor(Math.random() * 101);
+      document.getElementById("coolerHumidity").textContent = Math.floor(Math.random() * 41 + 20);
+    }
+
+    setInterval(updateSensors, 3000); // Update every 3s
+    updateSensors(); // Initial call
+  </script>
+
+</body>
+</html>
